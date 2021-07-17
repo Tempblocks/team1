@@ -1,0 +1,158 @@
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing:border-box;
+ }
+ 
+ #ourteam{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   flex-direction: column;
+   width:84vw;
+   margin:auto;
+ }
+ 
+ #ourteam h1{
+   margin-top:20px;
+   margin-bottom:50px;
+ }
+ 
+ #ourteam #sub_container1{
+   display:flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box  {
+   position:relative;
+   border:2px solid black;
+   width:300px;
+   height:300px;
+   border-radius:10px;
+   transition:transform 1s;
+   transform-style:preserve-3d;
+ }
+ 
+ #ourteam #sub_container1 .card:hover .inner_box  {
+   transform:rotateX(-180deg);
+ }
+ 
+ #ourteam #sub_container1 .card {
+   margin-bottom:40px;
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box .front , .back{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width: 100%;
+   height:100%;
+   position: absolute;
+   backface-visibility:hidden;
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box .one{
+   background-image:url("https://i.ibb.co/W3SQc3y/IMG-20210623-122157.jpg") ;
+   background-position:center;
+   background-repeat:on-repeat;
+   background-size: cover;
+   border-radius:7px;
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box .two{
+   background-image:url("https://i.ibb.co/GcksFW8/Picture-of-cheerful-curly-business-girl-wearing-glasses-over-white-background.jpg") ;
+   background-position:center;
+   background-repeat:on-repeat;
+   background-size: cover;
+   border-radius:7px;
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box .three{
+   background-image:url("https://i.ibb.co/Lt0bF99/testimonial-img.png") ;
+   background-position:center;
+   background-repeat:on-repeat;
+   background-size: cover;
+   border-radius:7px;
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box .front span{
+   border:1px solid #10b982;
+   padding:10px 15px;
+   position:absolute;
+   color:white;
+   background-color:#10b982;
+   transition:transform 1s;
+ }
+ 
+ #ourteam #sub_container1 .card:hover .front span{
+   transform:translateY(127px);
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box .back{
+   background-color: black;
+   color:white;
+   transform:rotateX(180deg);
+   flex-direction: column;
+   border-radius:5px;
+ }
+ 
+ #ourteam #sub_container1 .card .inner_box .back p{
+   margin-bottom:15px;
+   font-size:20px;
+   width:250px;
+   text-align:center;
+   display:flex;
+   align-items: center;
+   flex-direction: column;
+ }
+ 
+ /*icon style*/
+ 
+ #ourteam #sub_container1 .card .inner_box .back .icon li .fa-facebook {  
+   background: #3B5998;  
+   color: white;  
+   width:55px;
+   text-align:center;
+ }  
+ 
+ #ourteam #sub_container1 .card .inner_box .back .icon li .fa-twitter {  
+   background: #55ACEE;  
+   color: white;  
+   width:55px;
+   text-align:center;
+ }  
+ 
+ #ourteam #sub_container1 .card .inner_box .back .icon li .fa-instagram {  
+    background: #125688;  
+    color: white;  
+    width:55px;
+    text-align:center;
+ }  
+ 
+  #ourteam #sub_container1 .card .inner_box .back .icon li{
+    list-style:none;
+    font-size:30px;
+  }
+  
+  #ourteam #sub_container1 .card .inner_box .back .icon li a{
+    text-decoration:none;
+    margin:9px 6px;
+    border:2px solid black;
+    border-radius:30px;
+    padding:10px;
+  }
+  
+  #ourteam #sub_container1 .card .inner_box .back .icon{
+    display:flex;
+  }
+ 
+ @media screen and (min-width: 450px) {
+   #ourteam #sub_container1{
+     width:70vw;
+   }
+   
+   #ourteam #sub_container1 .card{
+     margin-bottom:70px;
+   }
+ }
